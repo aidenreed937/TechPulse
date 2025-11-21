@@ -1,6 +1,18 @@
 {
-  "java.home": "${env:JAVA_HOME}",
   "kotlin.java.home": "${env:JAVA_HOME}",
   "kotlin.languageServer.enabled": true,
-  "kotlin.debugAdapter.enabled": true
+  "kotlin.debugAdapter.enabled": true,
+  // 针对 Kotlin 文件的特殊配置
+  "[kotlin]": {
+    // 关键：指定 fwcd.kotlin 插件作为格式化工具
+    // 如果你装的是其他 Kotlin 插件，这里可能是 "mathiasfrohlich.Kotlin"
+    // 但 fwcd.kotlin 是目前的推荐标准
+    "editor.defaultFormatter": "fwcd.kotlin", 
+    // 可选：保存时自动格式化
+    "editor.formatOnSave": true
+  },
+  // 针对 Kotlin 脚本 (.kts) 的配置
+  "[kotlin-script]": {
+    "editor.defaultFormatter": "fwcd.kotlin"
+  }
 }
