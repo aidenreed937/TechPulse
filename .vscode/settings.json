@@ -1,0 +1,6 @@
+{
+  "java.home": "${env:JAVA_HOME}",
+  "kotlin.java.home": "${env:JAVA_HOME}",
+  "kotlin.languageServer.enabled": true,
+  "kotlin.debugAdapter.enabled": true
+}
