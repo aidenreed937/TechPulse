@@ -8,7 +8,7 @@ group = "com.aidenreed.techpulse"
 version = "1.0.0"
 application {
     mainClass.set("com.aidenreed.techpulse.ApplicationKt")
-    
+
     val isDevelopment: Boolean = project.ext.has("development")
     applicationDefaultJvmArgs = listOf("-Dio.ktor.development=$isDevelopment")
 }
